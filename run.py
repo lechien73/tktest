@@ -1,10 +1,7 @@
-from tkinterweb import HtmlFrame #import the HTML browser
-import tkinter as tk #python3
+from tkinter import *
 
+window = Tk()
 
-root = tk.Tk() #create the tkinter window
-frame = HtmlFrame(root) #create HTML browser
+window.title("Welcome to my app")
 
-frame.load_website("http://tkhtml.tcl.tk/tkhtml.html") #load a website
-frame.pack(fill="both", expand=True) #attach the HtmlFrame widget to the parent window
-root.mainloop()
+window.mainloop()
